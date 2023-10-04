@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+</head>
+<body>
+    
+    <h1>Nacionalidade</h1>
+
+    <input type="text" name="nac" id="inac">
+    <input type="button" value="Verificar" onclick="Clicou()">
+
+
+    <div id="vc">
+
+
+    </div>
+
+
+
+<script>
+    var nac = window.document.getElementById('inac')
+    var pais = String( nac. value)
+    var res = window.document.getElementById('vc')
+    
+    function Clicou(){
+        if (pais == Brasil){
+            res.innerText = `${pais}Vc é Brasileiro`
+        }
+
+        else { 
+            res.innerText = `${pais}Vc é estrangeiro`
+        }
+    }
+
+
+</script>
+
+
+
+
+</body>
+</html>
