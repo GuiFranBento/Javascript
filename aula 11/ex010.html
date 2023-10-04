@@ -25,7 +25,7 @@ Velocidade por hr<input type="number" name="txtvel" id="itxtvel"> Km/h
         var txtve = window.document.getElementById('itxtvel') 
         var res = window.document.getElementById('ivel')
         var vel = Number (txtve.value )
-    
+        var vel = s
        
        
        
@@ -33,13 +33,16 @@ Velocidade por hr<input type="number" name="txtvel" id="itxtvel"> Km/h
        
        
        
-        if( vel  > 60){
+        if( s > 60){
             
-            res.innerHtml += `<p>Vc está a uma velocidade ${vel} ok</p>`
+            res.innerHtml = `<p>Vc está a uma velocidade ${vel} ok</p>`
         }
-       
-            res.innerHtml += `<p>Vc foi multado pelo excesso de velocidade de ${vel} km/h!</p>`
+        else {
+
+  
+            res.innerHtml = `<p>Vc foi multado pelo excesso de velocidade de ${vel} km/h!</p>`
         }
+    }
 
 </script>
 </body>
