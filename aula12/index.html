@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votar</title>
+</head>
+<body>
+    
+
+    <h1>Sistema obrigatório de votação</h1>
+
+    Digite sua idade para saber se precisará votar <input type="number" name="votar" id="votar">
+    <input type="button" value="Verificar" onclick="clicar()">
+    
+    <div id="res">
+
+
+    </div>
+
+
+    <script>
+        function clicar(){
+            var v = window.document.getElementById('votar')
+            var r = window.document.getElementById('res')
+            var n = Number (v.value)
+       
+            if(n < 16){
+               r.innerHTML = 'Não poderá votar, pois sua idade é menor que 16 anos'
+            }
+            else{
+                if(n >= 16 && n < 18){
+                    r.innerHTML = 'Seu voto poderá ser opcional, pois ainda não completou 18 anos '
+                }
+                else{
+                    r.innerHTML = ' Voto obrigatório, pois já completou 18 anos'
+                }
+
+            }
+       
+       
+       
+       
+       
+        }
+
+
+    </script>
+</body>
+
+</html>

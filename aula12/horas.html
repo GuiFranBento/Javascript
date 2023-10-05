@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horas</title>
+    <style>
+        div#res{
+            border: 1px solid black;
+            display: block;
+            margin: 5px 10px;
+            width: 200px;
+        }
+
+    </style>
+
+
+
+
+
+
+</head>
+<body>
+    <h1>Sistema de Horas automático</h1>
+
+    <div id="res" onmousemove="mover()"></div>
+
+
+    <script>
+        function mover(){
+            var agora = new Date()
+            var hora = agora.getHours()
+            var r = window.document.getElementById('res')        
+            r.innerHTML = `Agora são exatamente ${hora} horas`
+
+            if(hora < 12){
+                r.innerHTML +=  '(Bom dia)'}
+            else  {
+                    if(hora >= 12){
+                        r.innerHTML += '(Boa Tarde)'
+                    }
+
+                    else{
+                        if(hora >= 18){
+                            r.innerHTML += '(Boa Noite)'
+                        }
+                    }
+                }
+            }
+
+        
+
+
+    </script>
+
+
+</body>
+</html>

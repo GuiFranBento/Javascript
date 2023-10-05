@@ -9,8 +9,8 @@
     
     <h1>Nacionalidade</h1>
 
-    <input type="text" name="nac" id="inac">
-    <input type="button" value="Verificar" onclick="Clicou()">
+    <input type="text" name="nac" id="nac">
+    <input type="button" value="Verificar" onclick="clicou()">
 
 
     <div id="vc">
@@ -21,17 +21,17 @@
 
 
 <script>
-    var nac = window.document.getElementById('inac')
+    var nac = window.document.getElementById('nac')
     
     var res = window.document.getElementById('vc')
     
-    function Clicou(){
-        if (nac== 'Brasil'){
-            res.innerText = `${pais}Vc é Brasileiro`
+    function clicou(){
+        if (nac = 'Brasil'){
+            res.innerHTML = `Se vc é do ${nac}. Vc é Brasileiro!`
         }
 
         else { 
-            res.innerText = `${pais}Vc é estrangeiro`
+            res.innerHTML = `Vc é estrangeiro`
         }
     }
 
