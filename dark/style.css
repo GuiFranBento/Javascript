@@ -9,13 +9,12 @@
 }
 
 body{
-    background-color: #fafafa;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: #fafafa;   
     height: 100vh;
     margin: 0px;
     transition: background-color 0.2s linear;
+    
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body.dark{
@@ -26,6 +25,11 @@ body.dark{
     position: absolute;
     opacity: 0;
     transform: translateY(-20px);
+   
+}
+
+#cor{
+    margin: 15px;
 }
 
 .label{
@@ -68,4 +72,38 @@ body.dark{
 
 .fa-sun{
     color: #f39c12;
+}
+
+header{
+    position: sticky;
+    top: 0px;
+    background-color: lightgray;
+   
+}
+
+div#imagem{
+    display: flex;
+    justify-content: center; 
+    width: 40px;
+}
+
+#apresentacao{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#burguer{
+    display: relative;
+    top: 50%;
+    left: 40%;
+    cursor: pointer;
+    
+}
+
+#itens{
+    display: block;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 300px;
+    background-color: rgb(13, 57, 57);
 }

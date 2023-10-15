@@ -5,21 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dark-Theme</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
+<header>
+        
+    <span id="burguer" class="material-icons" onclick="clickmenu()">menu</span>
     
-
-<div>
-   
+    <div id="itens">
+     <h1 id="apresentacao"> Treinando base de sites</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto ratione, rerum beatae et corporis quam provident consequatur voluptates officia similique, officiis nulla neque explicabo quasi ullam. Minima tenetur perspiciatis doloribus.</p>
+     <div id="cor">
     <label class="label" for="ichk">
         <i class="fas fa-moon"></i>
         <i class="fas fa-sun"></i>
         <div class="ball"></div>
     </label>
     <input class="checkbox" type="checkbox" name="chk" id="ichk">
+    
+    
+    </div>
+    
+    
+    </div>
+
+    <div id="imagem"> <img src="" alt=""></div>
+</header>
 
 
-</div>
+
+
+
 
 
 
@@ -28,5 +44,23 @@
 
 <script src="script.js"></script>
 <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+
+<script>
+   
+   var res = window.document.getElementById('itens')
+   function clickmenu(){
+    if (itens.style.display == 'block'){
+        itens.style.display = 'none'
+    }
+    else{
+        itens.style.display = 'block'
+    }
+
+    }
+
+
+</script>
+
+
 </body>
 </html>
