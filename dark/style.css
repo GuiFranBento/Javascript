@@ -1,11 +1,11 @@
 @charset "UTF-8";
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 *{
     margin: 0px;
     padding: 0px;
     border: 0px;
     box-sizing: border-box;
-
+    overflow: hidden;
 }
 
 body{
@@ -13,7 +13,7 @@ body{
     height: 100vh;
     margin: 0px;
     transition: background-color 0.2s linear;
-    
+    width: 100vw;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -29,7 +29,7 @@ body.dark{
 }
 
 #cor{
-    margin: 15px;
+   padding: 15px;
 }
 
 .label{
@@ -42,7 +42,7 @@ body.dark{
 
     padding: 5px;
     position: relative;
-    height: 26px;
+    height:26px;
     width: 50px;
 
     transform: scale(1.5);
@@ -78,32 +78,90 @@ header{
     position: sticky;
     top: 0px;
     background-color: lightgray;
-   
+    height: 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.367);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+header > h1{
+    text-align: center;
+    font-family: 'Playfair Display', serif;;
 }
 
 div#imagem{
-    display: flex;
-    justify-content: center; 
-    width: 40px;
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
 }
 
 #apresentacao{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-#burguer{
-    display: relative;
-    top: 50%;
-    left: 40%;
-    cursor: pointer;
+    text-align: center;
+    border-bottom: 1px solid white;
     
 }
 
+
+#burguer{
+    position: absolute;
+    top: 1.5%;
+    left: 0%;
+    cursor: pointer;
+  
+    
+    
+}
+
+#burguer:hover{
+    background-color: #232c3535;
+    border-radius: 8px;
+    box-sizing: border-box;
+
+}
+
+
+#searche{
+    position: absolute;
+    top: 3%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+
+
 #itens{
-    display: block;
+    position: relative;
+    display: none;
     border: 1px solid black;
     border-radius: 10px;
     width: 300px;
+    height: 400px;
     background-color: rgb(13, 57, 57);
+    transform: translateY(0px);
+    color: white;
+  
+}
+
+
+
+
+
+
+#pesquisa{
+   display: none;
+   position: absolute;
+   top:3%;
+   left:88%;
+   transform: translate(-50%, -50%);
+}
+
+input#isc{
+    border: 1px solid rgba(0, 0, 0, 0.259);
+    border-radius: 10px;
+   height: 20px;
 }

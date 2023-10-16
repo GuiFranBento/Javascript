@@ -9,11 +9,12 @@
 </head>
 <body>
 <header>
-        
+    <h1>Smart &emsp;&ensp;&nbsp;Brain</h1>
+</header>  
     <span id="burguer" class="material-icons" onclick="clickmenu()">menu</span>
     
     <div id="itens">
-     <h1 id="apresentacao"> Treinando base de sites</h1>
+     <h1 id="apresentacao">Menu</h1>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto ratione, rerum beatae et corporis quam provident consequatur voluptates officia similique, officiis nulla neque explicabo quasi ullam. Minima tenetur perspiciatis doloribus.</p>
      <div id="cor">
     <label class="label" for="ichk">
@@ -28,9 +29,19 @@
     
     
     </div>
+    <form action="cadastro.php" method="post">
+        <div id="psqb"><span id="searche" class="material-icons" onclick="clicksearche()">searche</span></div>
+        <div id="pesquisa">
+           <label for="isc"></label>
+           <input  type="search" name="sc" id="isc" size="24px">
 
-    <div id="imagem"> <img src="" alt=""></div>
-</header>
+        </div>
+
+
+
+    </form>
+    <div id="imagem"> <a href="http://127.0.0.1:5500/dark/"><img src="Books.ico" alt="marca"></a></div>
+
 
 
 
@@ -47,6 +58,7 @@
 
 <script>
    
+   var res2 = window.document.getElementById('pesquisa')
    var res = window.document.getElementById('itens')
    function clickmenu(){
     if (itens.style.display == 'block'){
@@ -58,6 +70,15 @@
 
     }
 
+    function clicksearche(){
+    if (res2.style.display == 'block'){
+        res2.style.display = 'none'
+    }
+    else{
+        res2.style.display = 'block'
+    }
+
+    }
 
 </script>
 
