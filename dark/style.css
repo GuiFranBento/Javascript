@@ -182,27 +182,34 @@ main > section{
     background-color: white;
     height: 500px;
 }
-div#escrita > h1{
+ h1#txt1{
     display: block;
     margin: 20px 30px;
     text-indent: 10px;
     width: 300px;
 }
+
+div#escrita {
+    display: flex;
+    flex-direction: row;
+}
+
 
 div#escrita > p{
-    display: block;
+    display: flex;
+    flex-direction: row;
     margin: 20px 30px;
     text-indent: 10px;
     width: 300px;
 }
-div#laptop > img{
-    position: relative;
-    float: right;
-    top: 0px;
-    width: 100%;
+
+
+
+
+div#escrita > img {
+    margin: 0px 20px;
     width: 368px;
     height: 248px;
-
 }
 
 
@@ -316,4 +323,13 @@ form > a.botao{
 
 form > a.botao:hover{
     background-color: #67e3df ;
+}
+
+form > textarea {
+    position: absolute;
+    top: 80%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    border-radius: 8px;
 }
