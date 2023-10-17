@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.containerproje{
+    position: relative;
+
+}
+
+.containerproje .slide-container .slide{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px 9%;
+    padding-bottom: 70px;
+
+}
+
+.containerproje .slide-container .slide .contentproje{
+    flex: 1 1 350px;
+
+
+
+}
+
+.containerproje .slide-container .slide .contentproje h3{
+    font-size: 35px;
+    color:hsl(247, 100%, 50%) ;
+    font-family: sans-serif;
+
+}
