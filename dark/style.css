@@ -178,10 +178,8 @@ section#blue{
     height: 400px;
 }
 
-main > section{
-    background-color: white;
-    height: 500px;
-}
+
+
  h1#txt1{
     display: block;
     margin: 20px 30px;
@@ -211,6 +209,153 @@ div#escrita > img {
     width: 368px;
     height: 248px;
 }
+
+
+
+.container{
+    height: 500px;
+    width: 600px;
+    overflow: hidden;
+
+
+
+}
+
+.container .pdiv .sdiv{
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 9%;
+    padding-bottom: 70px;
+
+
+}
+
+.container .pdiv .sdiv .tdiv{
+    flex: 1 1 350px;
+    animation: slideContent  1s linear 1s backwards;
+
+}
+
+
+
+
+
+@keyframes slideContent{0%
+
+    {
+        opacity: 0%;
+        transform: translateX(-50px);
+    }
+
+}
+
+
+
+
+.container .pdiv .sdiv .tdiv > h3{
+    color: white;
+
+}
+
+
+.container .pdiv .sdiv .tdiv > p{
+    color: white;
+}
+
+.container .pdiv .sdiv .tdiv > a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid #67e3df ;
+    background-color: #285756;
+    border-radius: 40px;
+    
+}
+
+.container .pdiv .sdiv .tdiv > a:hover{
+    background-color: #0b1d1c;
+}
+
+
+.container .pdiv {
+    display: none;
+}
+
+
+.container .pdiv.active{
+    display: block;
+}
+
+
+
+.container .pdiv:nth-child(1) .sdiv{
+    background: url(imagens/have.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+.container .pdiv:nth-child(2) .sdiv{
+    background: url(imagens/ct.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+
+
+.container .pdiv:nth-child(3) .sdiv{
+    background: url(imagens/pc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+ .container #prev, .container #next{
+
+    display: block;
+    color: white;
+    background: #890873;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bolder;
+    border-radius: 30px;
+}
+
+
+
+
+
+.container #prev:hover, 
+.container #next:hover{
+    background-color: #cc34b3;
+
+}
+
+
+
+
+
+
+
 
 
 footer{
