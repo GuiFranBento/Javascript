@@ -1,10 +1,18 @@
-    const chk = document.getElementById('ichk')
-    chk.addEventListener('change', () => {
-        document.body.classList.toogle('dark')
+const switchToogle = document.querySelector('.switch-toggle');
+const icons =  switchToogle.querySelectorAll('.material-symbols-outline');
+
+switchToogle.addEventListener('click', () => {
+    
+    document.body.classList.toggle('dark-theme-variables');
+    
+    
+    icons.forEach(spn => {
+        spn.classList.toggle('switch-actived')
     })
 
 
-
+})
+    
 let slides = document.querySelectorAll('.pdiv');
 let index = 0;
 
