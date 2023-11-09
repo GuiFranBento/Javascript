@@ -185,7 +185,7 @@ input#isc{
 }
 
 main{
-    background-color: white;
+  
     margin: 0px 50px;
 }
 
@@ -193,7 +193,7 @@ section#blue{
     
     background-color: #091827;
     color: white;
-    height: 400px;
+    height: 350px;
     margin-bottom: 50px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
