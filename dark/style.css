@@ -96,7 +96,8 @@ header{
     position: sticky;
     top: 0px;
     background-color: lightgray;
-    height: 50px;
+    width: 100%;
+    height: 60px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.367);
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -168,24 +169,60 @@ div#imagem{
 
 
 
-
-
-#pesquisa{
-   display: none;
-   position: absolute;
-   top:3%;
-   left:85%;
-   transform: translate(-50%, -50%);
+.procura{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+   
+    position: absolute;
+    top: 3%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    
 }
 
-input#isc{
-    border: 1px solid rgba(0, 0, 0, 0.259);
-    border-radius: 10px;
-   height: 20px;
+.procura button{
+    margin: 0rem .5rem 0rem ;
+    padding: 0;
+
+    width:30px;
+    height: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #4D54FF ;
+    border: none;
+    border-radius: 50%;
+    box-shadow:0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset ;
+
+    transform: translate(53px, 0px);
+    
+}
+
+
+.procura img{
+    width: 25px;
+    height: 25px;
+    
+}
+
+.procura input{
+    height: 30px;   
+    width: 159px;
+
+    padding: 0.5rem 0.5rem 0.5rem 3.1rem;
+
+    border: none;
+    border-radius: 100px;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25)
+
 }
 
 main{
-  
+    
     margin: 0px 50px;
 }
 
